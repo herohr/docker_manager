@@ -1,0 +1,459 @@
+[
+  {
+    "index": 0,
+    "name": "Container",
+    "desc": null,
+    "add_time": 1588081305,
+    "up_time": 1588081305,
+    "list": [
+      {
+        "query_path": {
+          "path": "/container/create",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 11,
+        "method": "POST",
+        "catid": 15,
+        "title": "create",
+        "path": "/container/create",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588227303,
+        "up_time": 1588229686,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa7636a2215c142c89c806",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"image_name\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"command\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}},\"required\":[\"image_name\"]}",
+        "req_body_type": "json",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"Args\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"HostsPath\":{\"type\":\"string\"},\"ResolvConfPath\":{\"type\":\"string\"},\"Mounts\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Name\":{\"type\":\"string\"},\"Config\":{\"type\":\"object\",\"properties\":{\"WorkingDir\":{\"type\":\"string\"},\"Volumes\":{\"type\":\"null\"},\"OnBuild\":{\"type\":\"null\"},\"AttachStdin\":{\"type\":\"boolean\"},\"AttachStderr\":{\"type\":\"boolean\"},\"Domainname\":{\"type\":\"string\"},\"Env\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Hostname\":{\"type\":\"string\"},\"StdinOnce\":{\"type\":\"boolean\"},\"Image\":{\"type\":\"string\"},\"Entrypoint\":{\"type\":\"null\"},\"Cmd\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"OpenStdin\":{\"type\":\"boolean\"},\"Labels\":{\"type\":\"object\",\"properties\":{}},\"Tty\":{\"type\":\"boolean\"},\"User\":{\"type\":\"string\"},\"AttachStdout\":{\"type\":\"boolean\"}}},\"RestartCount\":{\"type\":\"number\"},\"Created\":{\"type\":\"string\"},\"HostnamePath\":{\"type\":\"string\"},\"Platform\":{\"type\":\"string\"},\"MountLabel\":{\"type\":\"string\"},\"GraphDriver\":{\"type\":\"object\",\"properties\":{\"Name\":{\"type\":\"string\"},\"Data\":{\"type\":\"object\",\"properties\":{\"UpperDir\":{\"type\":\"string\"},\"WorkDir\":{\"type\":\"string\"},\"MergedDir\":{\"type\":\"string\"},\"LowerDir\":{\"type\":\"string\"}}}}},\"State\":{\"type\":\"object\",\"properties\":{\"ExitCode\":{\"type\":\"number\"},\"Status\":{\"type\":\"string\"},\"Error\":{\"type\":\"string\"},\"Dead\":{\"type\":\"boolean\"},\"StartedAt\":{\"type\":\"string\"},\"Restarting\":{\"type\":\"boolean\"},\"Paused\":{\"type\":\"boolean\"},\"OOMKilled\":{\"type\":\"boolean\"},\"FinishedAt\":{\"type\":\"string\"},\"Running\":{\"type\":\"boolean\"},\"Pid\":{\"type\":\"number\"}}},\"AppArmorProfile\":{\"type\":\"string\"},\"Id\":{\"type\":\"string\"},\"NetworkSettings\":{\"type\":\"object\",\"properties\":{\"Networks\":{\"type\":\"object\",\"properties\":{\"bridge\":{\"type\":\"object\",\"properties\":{\"Aliases\":{\"type\":\"null\"},\"GlobalIPv6Address\":{\"type\":\"string\"},\"Links\":{\"type\":\"null\"},\"IPPrefixLen\":{\"type\":\"number\"},\"Gateway\":{\"type\":\"string\"},\"IPAddress\":{\"type\":\"string\"},\"EndpointID\":{\"type\":\"string\"},\"NetworkID\":{\"type\":\"string\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"IPv6Gateway\":{\"type\":\"string\"},\"IPAMConfig\":{\"type\":\"null\"},\"MacAddress\":{\"type\":\"string\"},\"DriverOpts\":{\"type\":\"null\"}}}}},\"GlobalIPv6Address\":{\"type\":\"string\"},\"SecondaryIPAddresses\":{\"type\":\"null\"},\"IPPrefixLen\":{\"type\":\"number\"},\"Bridge\":{\"type\":\"string\"},\"Gateway\":{\"type\":\"string\"},\"EndpointID\":{\"type\":\"string\"},\"LinkLocalIPv6Address\":{\"type\":\"string\"},\"MacAddress\":{\"type\":\"string\"},\"IPAddress\":{\"type\":\"string\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"IPv6Gateway\":{\"type\":\"string\"},\"HairpinMode\":{\"type\":\"boolean\"},\"Ports\":{\"type\":\"object\",\"properties\":{}},\"LinkLocalIPv6PrefixLen\":{\"type\":\"number\"},\"SecondaryIPv6Addresses\":{\"type\":\"null\"},\"SandboxID\":{\"type\":\"string\"},\"SandboxKey\":{\"type\":\"string\"}}},\"ExecIDs\":{\"type\":\"null\"},\"HostConfig\":{\"type\":\"object\",\"properties\":{\"SecurityOpt\":{\"type\":\"null\"},\"CpusetMems\":{\"type\":\"string\"},\"GroupAdd\":{\"type\":\"null\"},\"Runtime\":{\"type\":\"string\"},\"CpuRealtimePeriod\":{\"type\":\"number\"},\"NetworkMode\":{\"type\":\"string\"},\"MemorySwappiness\":{\"type\":\"null\"},\"DiskQuota\":{\"type\":\"number\"},\"ConsoleSize\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"BlkioDeviceReadIOps\":{\"type\":\"null\"},\"Memory\":{\"type\":\"number\"},\"UsernsMode\":{\"type\":\"string\"},\"OomKillDisable\":{\"type\":\"boolean\"},\"CapAdd\":{\"type\":\"null\"},\"MemorySwap\":{\"type\":\"number\"},\"RestartPolicy\":{\"type\":\"object\",\"properties\":{\"Name\":{\"type\":\"string\"},\"MaximumRetryCount\":{\"type\":\"number\"}}},\"Ulimits\":{\"type\":\"null\"},\"PidMode\":{\"type\":\"string\"},\"ReadonlyRootfs\":{\"type\":\"boolean\"},\"DnsOptions\":{\"type\":\"null\"},\"PublishAllPorts\":{\"type\":\"boolean\"},\"CpuShares\":{\"type\":\"number\"},\"Dns\":{\"type\":\"null\"},\"BlkioWeight\":{\"type\":\"number\"},\"CpusetCpus\":{\"type\":\"string\"},\"CpuQuota\":{\"type\":\"number\"},\"ReadonlyPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"OomScoreAdj\":{\"type\":\"number\"},\"ShmSize\":{\"type\":\"number\"},\"Binds\":{\"type\":\"null\"},\"CpuCount\":{\"type\":\"number\"},\"IpcMode\":{\"type\":\"string\"},\"Links\":{\"type\":\"null\"},\"DeviceCgroupRules\":{\"type\":\"null\"},\"IOMaximumBandwidth\":{\"type\":\"number\"},\"CpuPercent\":{\"type\":\"number\"},\"DnsSearch\":{\"type\":\"null\"},\"LogConfig\":{\"type\":\"object\",\"properties\":{\"Config\":{\"type\":\"object\",\"properties\":{}},\"Type\":{\"type\":\"string\"}}},\"CapDrop\":{\"type\":\"null\"},\"Cgroup\":{\"type\":\"string\"},\"ExtraHosts\":{\"type\":\"null\"},\"IOMaximumIOps\":{\"type\":\"number\"},\"BlkioDeviceWriteBps\":{\"type\":\"null\"},\"Privileged\":{\"type\":\"boolean\"},\"KernelMemory\":{\"type\":\"number\"},\"UTSMode\":{\"type\":\"string\"},\"MaskedPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"MemoryReservation\":{\"type\":\"number\"},\"VolumesFrom\":{\"type\":\"null\"},\"VolumeDriver\":{\"type\":\"string\"},\"CgroupParent\":{\"type\":\"string\"},\"BlkioWeightDevice\":{\"type\":\"null\"},\"CpuPeriod\":{\"type\":\"number\"},\"PortBindings\":{\"type\":\"null\"},\"AutoRemove\":{\"type\":\"boolean\"},\"PidsLimit\":{\"type\":\"number\"},\"CpuRealtimeRuntime\":{\"type\":\"number\"},\"Devices\":{\"type\":\"null\"},\"Isolation\":{\"type\":\"string\"},\"NanoCpus\":{\"type\":\"number\"},\"BlkioDeviceReadBps\":{\"type\":\"null\"},\"ContainerIDFile\":{\"type\":\"string\"},\"BlkioDeviceWriteIOps\":{\"type\":\"null\"}}},\"ProcessLabel\":{\"type\":\"string\"},\"Image\":{\"type\":\"string\"},\"Path\":{\"type\":\"string\"},\"Driver\":{\"type\":\"string\"},\"LogPath\":{\"type\":\"string\"}}},\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"}},\"required\":[\"data\",\"msg\",\"code\"]}"
+      },
+      {
+        "query_path": {
+          "path": "/container/get",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 13,
+        "method": "POST",
+        "catid": 15,
+        "title": "get",
+        "path": "/container/get",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588227701,
+        "up_time": 1588228176,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa705055abd444a20cc408",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_type": "json",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"object\",\"properties\":{\"Image\":{\"type\":\"string\"},\"ResolvConfPath\":{\"type\":\"string\"},\"NetworkSettings\":{\"type\":\"object\",\"properties\":{\"Bridge\":{\"type\":\"string\"},\"LinkLocalIPv6Address\":{\"type\":\"string\"},\"IPPrefixLen\":{\"type\":\"number\"},\"SecondaryIPv6Addresses\":{\"type\":\"null\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"LinkLocalIPv6PrefixLen\":{\"type\":\"number\"},\"SandboxKey\":{\"type\":\"string\"},\"SandboxID\":{\"type\":\"string\"},\"IPv6Gateway\":{\"type\":\"string\"},\"SecondaryIPAddresses\":{\"type\":\"null\"},\"HairpinMode\":{\"type\":\"boolean\"},\"IPAddress\":{\"type\":\"string\"},\"Networks\":{\"type\":\"object\",\"properties\":{\"bridge\":{\"type\":\"object\",\"properties\":{\"IPAMConfig\":{\"type\":\"null\"},\"IPPrefixLen\":{\"type\":\"number\"},\"NetworkID\":{\"type\":\"string\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"MacAddress\":{\"type\":\"string\"},\"Links\":{\"type\":\"null\"},\"IPv6Gateway\":{\"type\":\"string\"},\"Aliases\":{\"type\":\"null\"},\"IPAddress\":{\"type\":\"string\"},\"DriverOpts\":{\"type\":\"null\"},\"EndpointID\":{\"type\":\"string\"},\"GlobalIPv6Address\":{\"type\":\"string\"},\"Gateway\":{\"type\":\"string\"}}}}},\"Ports\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostIp\":{\"type\":\"string\"},\"HostPort\":{\"type\":\"string\"}}}}}},\"EndpointID\":{\"type\":\"string\"},\"GlobalIPv6Address\":{\"type\":\"string\"},\"Gateway\":{\"type\":\"string\"},\"MacAddress\":{\"type\":\"string\"}}},\"Platform\":{\"type\":\"string\"},\"MountLabel\":{\"type\":\"string\"},\"Args\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"RestartCount\":{\"type\":\"number\"},\"Config\":{\"type\":\"object\",\"properties\":{\"Domainname\":{\"type\":\"string\"},\"AttachStdout\":{\"type\":\"boolean\"},\"AttachStdin\":{\"type\":\"boolean\"},\"OnBuild\":{\"type\":\"null\"},\"User\":{\"type\":\"string\"},\"StdinOnce\":{\"type\":\"boolean\"},\"ExposedPorts\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"object\",\"properties\":{}}}},\"Cmd\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Image\":{\"type\":\"string\"},\"Tty\":{\"type\":\"boolean\"},\"OpenStdin\":{\"type\":\"boolean\"},\"Env\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Entrypoint\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Labels\":{\"type\":\"object\",\"properties\":{}},\"AttachStderr\":{\"type\":\"boolean\"},\"Volumes\":{\"type\":\"null\"},\"Hostname\":{\"type\":\"string\"},\"WorkingDir\":{\"type\":\"string\"}}},\"HostsPath\":{\"type\":\"string\"},\"ExecIDs\":{\"type\":\"null\"},\"AppArmorProfile\":{\"type\":\"string\"},\"LogPath\":{\"type\":\"string\"},\"Id\":{\"type\":\"string\"},\"HostnamePath\":{\"type\":\"string\"},\"Path\":{\"type\":\"string\"},\"State\":{\"type\":\"object\",\"properties\":{\"Paused\":{\"type\":\"boolean\"},\"FinishedAt\":{\"type\":\"string\"},\"Pid\":{\"type\":\"number\"},\"ExitCode\":{\"type\":\"number\"},\"Running\":{\"type\":\"boolean\"},\"Dead\":{\"type\":\"boolean\"},\"OOMKilled\":{\"type\":\"boolean\"},\"Status\":{\"type\":\"string\"},\"Error\":{\"type\":\"string\"},\"StartedAt\":{\"type\":\"string\"},\"Restarting\":{\"type\":\"boolean\"}}},\"Driver\":{\"type\":\"string\"},\"ProcessLabel\":{\"type\":\"string\"},\"GraphDriver\":{\"type\":\"object\",\"properties\":{\"Data\":{\"type\":\"object\",\"properties\":{\"LowerDir\":{\"type\":\"string\"},\"MergedDir\":{\"type\":\"string\"},\"UpperDir\":{\"type\":\"string\"},\"WorkDir\":{\"type\":\"string\"}}},\"Name\":{\"type\":\"string\"}}},\"Name\":{\"type\":\"string\"},\"HostConfig\":{\"type\":\"object\",\"properties\":{\"LogConfig\":{\"type\":\"object\",\"properties\":{\"Type\":{\"type\":\"string\"},\"Config\":{\"type\":\"object\",\"properties\":{}}}},\"MemoryReservation\":{\"type\":\"number\"},\"BlkioDeviceReadIOps\":{\"type\":\"null\"},\"CpuCount\":{\"type\":\"number\"},\"Memory\":{\"type\":\"number\"},\"CpuRealtimeRuntime\":{\"type\":\"number\"},\"CapAdd\":{\"type\":\"null\"},\"UTSMode\":{\"type\":\"string\"},\"CpusetCpus\":{\"type\":\"string\"},\"ReadonlyPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"VolumesFrom\":{\"type\":\"null\"},\"BlkioDeviceWriteIOps\":{\"type\":\"null\"},\"OomKillDisable\":{\"type\":\"boolean\"},\"NanoCpus\":{\"type\":\"number\"},\"CpuPeriod\":{\"type\":\"number\"},\"NetworkMode\":{\"type\":\"string\"},\"Binds\":{\"type\":\"null\"},\"Ulimits\":{\"type\":\"null\"},\"ShmSize\":{\"type\":\"number\"},\"CpuPercent\":{\"type\":\"number\"},\"MaskedPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Links\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Cgroup\":{\"type\":\"string\"},\"BlkioDeviceWriteBps\":{\"type\":\"null\"},\"OomScoreAdj\":{\"type\":\"number\"},\"DnsSearch\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"PidMode\":{\"type\":\"string\"},\"Dns\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"BlkioWeightDevice\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Isolation\":{\"type\":\"string\"},\"ContainerIDFile\":{\"type\":\"string\"},\"ExtraHosts\":{\"type\":\"null\"},\"DeviceCgroupRules\":{\"type\":\"null\"},\"MemorySwappiness\":{\"type\":\"null\"},\"Runtime\":{\"type\":\"string\"},\"Privileged\":{\"type\":\"boolean\"},\"CpusetMems\":{\"type\":\"string\"},\"IOMaximumIOps\":{\"type\":\"number\"},\"PortBindings\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostIp\":{\"type\":\"string\"},\"HostPort\":{\"type\":\"string\"}}}}}},\"PublishAllPorts\":{\"type\":\"boolean\"},\"IpcMode\":{\"type\":\"string\"},\"DiskQuota\":{\"type\":\"number\"},\"CapDrop\":{\"type\":\"null\"},\"AutoRemove\":{\"type\":\"boolean\"},\"DnsOptions\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"ConsoleSize\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"BlkioDeviceReadBps\":{\"type\":\"null\"},\"CpuShares\":{\"type\":\"number\"},\"Devices\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"ReadonlyRootfs\":{\"type\":\"boolean\"},\"PidsLimit\":{\"type\":\"number\"},\"BlkioWeight\":{\"type\":\"number\"},\"CpuRealtimePeriod\":{\"type\":\"number\"},\"CgroupParent\":{\"type\":\"string\"},\"VolumeDriver\":{\"type\":\"string\"},\"RestartPolicy\":{\"type\":\"object\",\"properties\":{\"MaximumRetryCount\":{\"type\":\"number\"},\"Name\":{\"type\":\"string\"}}},\"SecurityOpt\":{\"type\":\"null\"},\"GroupAdd\":{\"type\":\"null\"},\"KernelMemory\":{\"type\":\"number\"},\"UsernsMode\":{\"type\":\"string\"},\"MemorySwap\":{\"type\":\"number\"},\"CpuQuota\":{\"type\":\"number\"},\"IOMaximumBandwidth\":{\"type\":\"number\"}}},\"Mounts\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Created\":{\"type\":\"string\"}}},\"code\":{\"type\":\"number\"},\"msg\":{\"type\":\"string\"}}}",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"name\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}}}"
+      },
+      {
+        "query_path": {
+          "path": "/container/list",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 6,
+        "method": "POST",
+        "catid": 15,
+        "title": "list",
+        "path": "/container/list",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588081320,
+        "up_time": 1588227744,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa6ea055abd4707b0cc404",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Args\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"HostsPath\":{\"type\":\"string\"},\"ResolvConfPath\":{\"type\":\"string\"},\"Mounts\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Name\":{\"type\":\"string\"},\"Type\":{\"type\":\"string\"},\"Source\":{\"type\":\"string\"},\"Mode\":{\"type\":\"string\"},\"Destination\":{\"type\":\"string\"},\"Propagation\":{\"type\":\"string\"},\"Driver\":{\"type\":\"string\"},\"RW\":{\"type\":\"boolean\"}},\"required\":[\"Name\",\"Type\",\"Source\",\"Mode\",\"Destination\",\"Propagation\",\"Driver\",\"RW\"]}},\"Name\":{\"type\":\"string\"},\"Config\":{\"type\":\"object\",\"properties\":{\"WorkingDir\":{\"type\":\"string\"},\"Volumes\":{\"type\":\"object\",\"properties\":{\"/data/configdb\":{\"type\":\"object\",\"properties\":{}},\"/data/db\":{\"type\":\"object\",\"properties\":{}},\"/data\":{\"type\":\"object\",\"properties\":{}}}},\"OnBuild\":{\"type\":\"null\"},\"AttachStdin\":{\"type\":\"boolean\"},\"AttachStderr\":{\"type\":\"boolean\"},\"Domainname\":{\"type\":\"string\"},\"ExposedPorts\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"object\",\"properties\":{}},\"27017/tcp\":{\"type\":\"object\",\"properties\":{}},\"9000/tcp\":{\"type\":\"object\",\"properties\":{}}}},\"Env\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Hostname\":{\"type\":\"string\"},\"StdinOnce\":{\"type\":\"boolean\"},\"Image\":{\"type\":\"string\"},\"Entrypoint\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Cmd\":{\"type\":[\"array\",\"null\"],\"items\":{\"type\":\"string\"}},\"OpenStdin\":{\"type\":\"boolean\"},\"Labels\":{\"type\":\"object\",\"properties\":{}},\"Tty\":{\"type\":\"boolean\"},\"User\":{\"type\":\"string\"},\"AttachStdout\":{\"type\":\"boolean\"},\"ArgsEscaped\":{\"type\":\"boolean\"}}},\"RestartCount\":{\"type\":\"number\"},\"Created\":{\"type\":\"string\"},\"HostnamePath\":{\"type\":\"string\"},\"Platform\":{\"type\":\"string\"},\"MountLabel\":{\"type\":\"string\"},\"GraphDriver\":{\"type\":\"object\",\"properties\":{\"Name\":{\"type\":\"string\"},\"Data\":{\"type\":\"object\",\"properties\":{\"UpperDir\":{\"type\":\"string\"},\"WorkDir\":{\"type\":\"string\"},\"MergedDir\":{\"type\":\"string\"},\"LowerDir\":{\"type\":\"string\"}}}}},\"State\":{\"type\":\"object\",\"properties\":{\"ExitCode\":{\"type\":\"number\"},\"Status\":{\"type\":\"string\"},\"Error\":{\"type\":\"string\"},\"Dead\":{\"type\":\"boolean\"},\"StartedAt\":{\"type\":\"string\"},\"Restarting\":{\"type\":\"boolean\"},\"Paused\":{\"type\":\"boolean\"},\"OOMKilled\":{\"type\":\"boolean\"},\"FinishedAt\":{\"type\":\"string\"},\"Running\":{\"type\":\"boolean\"},\"Pid\":{\"type\":\"number\"}}},\"AppArmorProfile\":{\"type\":\"string\"},\"Id\":{\"type\":\"string\"},\"NetworkSettings\":{\"type\":\"object\",\"properties\":{\"Networks\":{\"type\":\"object\",\"properties\":{\"bridge\":{\"type\":\"object\",\"properties\":{\"Aliases\":{\"type\":\"null\"},\"GlobalIPv6Address\":{\"type\":\"string\"},\"Links\":{\"type\":\"null\"},\"IPPrefixLen\":{\"type\":\"number\"},\"Gateway\":{\"type\":\"string\"},\"IPAddress\":{\"type\":\"string\"},\"EndpointID\":{\"type\":\"string\"},\"NetworkID\":{\"type\":\"string\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"IPv6Gateway\":{\"type\":\"string\"},\"IPAMConfig\":{\"type\":\"null\"},\"MacAddress\":{\"type\":\"string\"},\"DriverOpts\":{\"type\":\"null\"}}}}},\"GlobalIPv6Address\":{\"type\":\"string\"},\"SecondaryIPAddresses\":{\"type\":\"null\"},\"IPPrefixLen\":{\"type\":\"number\"},\"Bridge\":{\"type\":\"string\"},\"Gateway\":{\"type\":\"string\"},\"EndpointID\":{\"type\":\"string\"},\"LinkLocalIPv6Address\":{\"type\":\"string\"},\"MacAddress\":{\"type\":\"string\"},\"IPAddress\":{\"type\":\"string\"},\"GlobalIPv6PrefixLen\":{\"type\":\"number\"},\"IPv6Gateway\":{\"type\":\"string\"},\"HairpinMode\":{\"type\":\"boolean\"},\"Ports\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostPort\":{\"type\":\"string\"},\"HostIp\":{\"type\":\"string\"}}}},\"27017/tcp\":{\"type\":\"null\"},\"9000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostPort\":{\"type\":\"string\"},\"HostIp\":{\"type\":\"string\"}}}}}},\"LinkLocalIPv6PrefixLen\":{\"type\":\"number\"},\"SecondaryIPv6Addresses\":{\"type\":\"null\"},\"SandboxID\":{\"type\":\"string\"},\"SandboxKey\":{\"type\":\"string\"}}},\"ExecIDs\":{\"type\":\"null\"},\"HostConfig\":{\"type\":\"object\",\"properties\":{\"SecurityOpt\":{\"type\":\"null\"},\"CpusetMems\":{\"type\":\"string\"},\"GroupAdd\":{\"type\":\"null\"},\"Runtime\":{\"type\":\"string\"},\"CpuRealtimePeriod\":{\"type\":\"number\"},\"NetworkMode\":{\"type\":\"string\"},\"MemorySwappiness\":{\"type\":\"null\"},\"DiskQuota\":{\"type\":\"number\"},\"ConsoleSize\":{\"type\":\"array\",\"items\":{\"type\":\"number\"}},\"BlkioDeviceReadIOps\":{\"type\":\"null\"},\"Memory\":{\"type\":\"number\"},\"UsernsMode\":{\"type\":\"string\"},\"OomKillDisable\":{\"type\":\"boolean\"},\"CapAdd\":{\"type\":\"null\"},\"MemorySwap\":{\"type\":\"number\"},\"RestartPolicy\":{\"type\":\"object\",\"properties\":{\"Name\":{\"type\":\"string\"},\"MaximumRetryCount\":{\"type\":\"number\"}}},\"Ulimits\":{\"type\":\"null\"},\"PidMode\":{\"type\":\"string\"},\"ReadonlyRootfs\":{\"type\":\"boolean\"},\"DnsOptions\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"PublishAllPorts\":{\"type\":\"boolean\"},\"CpuShares\":{\"type\":\"number\"},\"Dns\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"BlkioWeight\":{\"type\":\"number\"},\"CpusetCpus\":{\"type\":\"string\"},\"CpuQuota\":{\"type\":\"number\"},\"ReadonlyPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"OomScoreAdj\":{\"type\":\"number\"},\"ShmSize\":{\"type\":\"number\"},\"Binds\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"CpuCount\":{\"type\":\"number\"},\"IpcMode\":{\"type\":\"string\"},\"Links\":{\"type\":[\"array\",\"null\"],\"items\":{\"type\":\"string\"}},\"DeviceCgroupRules\":{\"type\":\"null\"},\"IOMaximumBandwidth\":{\"type\":\"number\"},\"CpuPercent\":{\"type\":\"number\"},\"DnsSearch\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"LogConfig\":{\"type\":\"object\",\"properties\":{\"Config\":{\"type\":\"object\",\"properties\":{}},\"Type\":{\"type\":\"string\"}}},\"CapDrop\":{\"type\":\"null\"},\"Cgroup\":{\"type\":\"string\"},\"ExtraHosts\":{\"type\":\"null\"},\"IOMaximumIOps\":{\"type\":\"number\"},\"BlkioDeviceWriteBps\":{\"type\":\"null\"},\"Privileged\":{\"type\":\"boolean\"},\"KernelMemory\":{\"type\":\"number\"},\"UTSMode\":{\"type\":\"string\"},\"MaskedPaths\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"MemoryReservation\":{\"type\":\"number\"},\"VolumesFrom\":{\"type\":\"null\"},\"VolumeDriver\":{\"type\":\"string\"},\"CgroupParent\":{\"type\":\"string\"},\"BlkioWeightDevice\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"CpuPeriod\":{\"type\":\"number\"},\"PortBindings\":{\"type\":\"object\",\"properties\":{\"3000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostPort\":{\"type\":\"string\"},\"HostIp\":{\"type\":\"string\"}}}},\"9000/tcp\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"HostPort\":{\"type\":\"string\"},\"HostIp\":{\"type\":\"string\"}}}}}},\"AutoRemove\":{\"type\":\"boolean\"},\"PidsLimit\":{\"type\":\"number\"},\"CpuRealtimeRuntime\":{\"type\":\"number\"},\"Devices\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"Isolation\":{\"type\":\"string\"},\"NanoCpus\":{\"type\":\"number\"},\"BlkioDeviceReadBps\":{\"type\":\"null\"},\"ContainerIDFile\":{\"type\":\"string\"},\"BlkioDeviceWriteIOps\":{\"type\":\"null\"}}},\"ProcessLabel\":{\"type\":\"string\"},\"Image\":{\"type\":\"string\"},\"Path\":{\"type\":\"string\"},\"Driver\":{\"type\":\"string\"},\"LogPath\":{\"type\":\"string\"}},\"required\":[\"Args\",\"HostsPath\",\"ResolvConfPath\",\"Mounts\",\"Name\",\"Config\",\"RestartCount\",\"Created\",\"HostnamePath\",\"Platform\",\"MountLabel\",\"GraphDriver\",\"State\",\"AppArmorProfile\",\"Id\",\"NetworkSettings\",\"ExecIDs\",\"HostConfig\",\"ProcessLabel\",\"Image\",\"Path\",\"Driver\",\"LogPath\"]}},\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"}},\"required\":[\"data\",\"msg\",\"code\"]}",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
+        "req_body_type": "json"
+      },
+      {
+        "query_path": {
+          "path": "/container/logs",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 15,
+        "method": "POST",
+        "catid": 15,
+        "title": "logs",
+        "path": "/container/logs",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588228634,
+        "up_time": 1588228807,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa72c755abd4be8d0cc40b",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"number\"},\"data\":{\"type\":\"string\"}},\"required\":[\"data\",\"msg\",\"code\"]}"
+      },
+      {
+        "query_path": {
+          "path": "/container/rename",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 21,
+        "method": "POST",
+        "catid": 15,
+        "title": "rename",
+        "path": "/container/rename",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588229794,
+        "up_time": 1588229859,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa76e3a2215c63b989c80b",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"},\"new_name\":{\"type\":\"string\"}},\"required\":[\"new_name\"]}",
+        "req_body_type": "json",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"null\"},\"code\":{\"type\":\"number\"}},\"required\":[\"msg\",\"data\",\"code\"]}"
+      },
+      {
+        "query_path": {
+          "path": "/container/restart",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 18,
+        "method": "POST",
+        "catid": 15,
+        "title": "restart",
+        "path": "/container/restart",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588229432,
+        "up_time": 1588229873,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa76f1a2215c2d7389c80c",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"null\"},\"code\":{\"type\":\"number\"}}}"
+      },
+      {
+        "query_path": {
+          "path": "/container/start",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 24,
+        "method": "POST",
+        "catid": 15,
+        "title": "start",
+        "path": "/container/start",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588229965,
+        "up_time": 1588229980,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa775ca2215c637e89c80d",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/container/stop",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 27,
+        "method": "POST",
+        "catid": 15,
+        "title": "stop",
+        "path": "/container/stop",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588230074,
+        "up_time": 1588230089,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa77c9a2215c972489c80e",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/container/top",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 30,
+        "method": "POST",
+        "catid": 15,
+        "title": "top",
+        "path": "/container/top",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588230174,
+        "up_time": 1588230190,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa782ea2215cdbf089c80f",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{\"id\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": ""
+      },
+      {
+        "query_path": {
+          "path": "/container/unpause",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 33,
+        "method": "POST",
+        "catid": 15,
+        "title": "unpause",
+        "path": "/container/unpause",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588230333,
+        "up_time": 1588230354,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5eaa78d2a2215ce7f189c810",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "__v": 0,
+        "desc": "",
+        "markdown": "",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"}}}",
+        "req_body_type": "json",
+        "res_body": ""
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "Image",
+    "desc": null,
+    "add_time": 1588833956,
+    "up_time": 1588833956,
+    "list": [
+      {
+        "query_path": {
+          "path": "/image/create/",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 34,
+        "method": "GET",
+        "catid": 23,
+        "title": "create",
+        "path": "/image/create/",
+        "project_id": 11,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 11,
+        "add_time": 1588834023,
+        "up_time": 1588834023,
+        "req_query": [],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0
+      }
+    ]
+  }
+]
